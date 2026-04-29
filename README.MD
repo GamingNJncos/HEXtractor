@@ -1,6 +1,6 @@
 # HEXtractor
 
-Extracts all partition contents from Symbol/Motorola/Zebra proprietary firmware images (`.hex`, `.bgz`). Handles the full image pipeline: format decode → flat binary → ROMHDR/TOC walk or direct scan → PE reconstruction → file carve fallback. Outputs reconstructed PE binaries, ROM data files at their original CE paths, SHA-256 checksums, and a machine-readable manifest.
+Extracts all partition contents from Symbol/Motorola/Zebra proprietary firmware images (`.hex`, `.bgz`). Handles the full image pipeline: format decode → flat binary → ROMHDR/TOC walk or direct scan → PE reconstruction → file carve fallback. Outputs reconstructed PE binaries, ROM data files at their original CE paths (where possible), SHA-256 checksums, and a machine-readable manifest.
 
 Supports WT4090 (PXA270 / CE5), WT41N0 (OMAP4460 / CE7), and any Symbol HEX or BGZ image following the same format conventions.
 
